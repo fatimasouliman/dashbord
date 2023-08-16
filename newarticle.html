@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashbord</title>
+    <link rel="stylesheet" href="./assets/css/index.css" >
+    <link rel="stylesheet" href="./assets/css/new.css" >
+</head>
+<body>
+      <!------------------nav bar start------------------>
+
+      <nav class="nav-bar">
+        <div class="logo">
+            <img src="./assets/images/logo.png" >
+            <h1>Mountain Breeze Resort</h1>
+        </div>
+        <ul class="menu">
+            <li class="active"><span></span><a href=""><img src="./assets/images/blogs.png" >Blogs</a></li>
+            <li><a href=""><span></span><img src="./assets/images/gallery.png" >Gallery</a></li>
+            <li><a href=""><span></span><img src="./assets/images/rooms.png" >Rooms</a></li>
+            <li><a href=""><span></span><img src="./assets/images/booking.png" >Booking</a></li>
+            <li><a href=""><span></span><img src="./assets/images/explore.png" >Explore</a></li>
+            <li><a href=""><span></span><img src="./assets/images/food.png" >Food</a></li>
+            <li><a href=""><span></span><img src="./assets/images/inbox.png">Inbox</a></li>
+            
+        </ul>
+    </nav>
+
+<!------------------nav bar end------------------>
+
+<!------------------blogs section start------------------>
+    <section class="blogs">
+        <header>
+            <nav class="nav-blogs">
+                <h1>Blogs / New Article</h1>
+                <ul class="admin-setting" >
+                    <li><img src="./assets/images/notification.png" ></li>
+                    <li><img src="./assets/images/profile-circle.png" ></li>
+                    <li>Admin name</li>
+                </ul>
+            </nav>
+        </header>
+        <div class="hero" >
+            
+            
+            <form>
+                <label class="cover" onclick="clickBtn()">Article Cover <span>*</span></label>
+                <div class="image">
+                    <img class="added-img" src="" >
+                    <img  class="add" src="./assets/images/add-circle-big.png" >
+                    <input class="add-img" type="file"  accept="image/jpg, image/jpeg, image/png" id="input-img" required>
+                </div>
+                <div class="detils" >
+
+                    <label class="title-lable" for="input-title" >Title<span>*</span></label>
+                    <input id="input-title" type="text" required>
+                    <span class="left" >/</span>
+                    <span class="right" >/</span>
+                    <input id="input-date" type="date" value="date" formtarget="yyy/mm/dd">
+                    <label class="date" for="input-date">Date:</label>
+                </div>
+                <label class="label-tags" for="tags">Tags<span>*</span></label>
+                <select id="tags" class="tags" required>
+                    <option></option>
+                </select>
+                <div>
+                    <label for="desc" >Description</label>
+                    <textarea id="desc" class="description" >
+
+                </textarea>
+                </div>
+                <div class="add-photo-videos" >
+                    <div class="cont-add" >
+                        <div class="first-add-btn">
+                            <img src="./assets/images/gallery-add.png" >
+                            <span >Add photo/video</span>
+                        </div>
+                        <input id="input-photo" type="file" accept="image/jpg, image/jpeg, image/png , video/mp4" >
+                    </div>
+                    
+                    <div class="container" >
+                        <span>Photos</span>
+                        <div style="display: flex; flex-direction: row-reverse;" >
+                            <div class="add-btn" >
+                                <img src="./assets/images/add-circle-photo.png">
+                            </div>
+                            <div class="container-add" >
+                                <!-- <div class="added-photo" >
+                                    <img class="photo" src="./assets/images/article.png" >
+                                    <div class="trash" >
+                                        <img class="delet" src="./assets/images/bag.png" >
+                                    </div>
+                                </div>
+                                <div class="added-photo" >
+                                    <video class="photo" src="./assets/images/VID-20201225-WA0005.mp4" ></video>
+                                    <div class="trash" >
+                                        <img class="delet" src="./assets/images/bag.png" >
+                                    </div>
+                                </div> -->
+                               
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    
+                </div>
+                <div class="btns">
+                    <button class="cancel" >Cancel</button>
+                    <input class="add-a" type="submit" value="Add Article">
+                </div> 
+            </form>
+               
+        </div>
+    </section>
+    <!------------------blogs section end------------------>
+    <script src="./assets/javascript/new.js" ></script>
+</body>
+</html>
