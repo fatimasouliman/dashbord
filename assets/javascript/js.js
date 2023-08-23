@@ -1,4 +1,6 @@
 
+
+// calender---------------
 const currentDate = document.querySelector(".current-date");
 const daysTags = document.querySelector(".calender-days");
 const prevnextIcon = document.querySelectorAll(".change pre img");
@@ -40,6 +42,10 @@ prevnextIcon.forEach(icon => {
     })
 })
 
+// give the calender the input date
+
+
+// make the current date the defult value for the input
 const inputDate = document.getElementById("input-date");
 inputDate.valueAsDate= new Date();
 const clear = document.querySelector(".close");
@@ -47,19 +53,17 @@ clear.addEventListener("click" , () => {
     inputDate.valueAsDate=null;
 })
 
-const del = document.querySelector(".del-article");
-const divDelet = document.querySelector(".div-popup-delet");
-del.addEventListener("click" , () => {
-    divDelet.classList.add("show");
-})
-const cancelDel = document.querySelector(".div-popup-delet .popup-delet .delet-btns .cancel");
-cancelDel.addEventListener("click" , () => {
-    divDelet.classList.remove("show");
+inputDate.addEventListener('change' , () => {
+    currentDate.innerText = `${months[inputDate.valueAsDate.getMonth()]} ${inputDate.valueAsDate.getFullYear()}`;
+    prevnextIcon.forEach(icon => {
+        icon.addEventListener("click" , () => {
+            currentMonth = icon.id === "prev" ? currentMonth - 1 : currentMonth + 1;
+            renderCalender();
+        })
+    })
+    
 })
 
-const deletA = document.querySelector(".div-popup-delet .popup-delet .delet-btns .delet");
-deletA.addEventListener("click" , () => {
-    let parentart = del.parentElement.parentElement.parentElement;
-    parentart.parentElement.classList.add("displayart");
-    divDelet.classList.remove("show");
-})
+
+
+

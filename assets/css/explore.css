@@ -1,0 +1,24 @@
+.articles{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px 20px 20px;
+}
+a{
+    text-decoration: none;
+}
+.carousel-article{
+    width: 100%;
+}
+.wrapper{
+    display: flex!important;
+}
+.slider{
+    width: 100%!important;
+    padding-right: 10px;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+}
+.head .menu .cont-add{
+    padding-right:25px!important;
+}

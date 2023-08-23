@@ -13,7 +13,7 @@ body{
 /* ---------------start nav bar style---------------- */
 .nav-bar{
     width: 21.7423133%;
-    min-height: 100%;
+    max-height: 100%;
     background-color: #004e6b;
     padding: 1.5rem;
     position: relative;
@@ -78,6 +78,7 @@ body{
 /* ---------------start blogs style--------------- */
 .blogs{
     width: 78.2576867%;
+    max-height: 100%;
 }
 .blogs .nav-blogs{
     display: flex;
@@ -103,6 +104,7 @@ body{
 .blogs .hero{
     background-color: #f0f0f0;
     max-width: 100%;
+    max-height: 100%;
     padding: 1rem;
 }
 .blogs .hero .btn-article{
@@ -132,7 +134,7 @@ body{
     gap: 20px;
     width: 69.50420954162769%;
 }
-.blogs .hero .article-continer .article{
+.article{
     background-color: white;
     width: 100%;
     border-radius: 16.2px;
@@ -141,49 +143,47 @@ body{
     box-shadow: 14.17625904083252px 10.125899314880371px 16.201438903808594px 0px #181D1F24;
 
 }
-.blogs .hero .article-continer .article .article-img{
+.article .article-img{
     width: 31.09017496635262% ;
 }
-.blogs .hero .article-continer .article .detils{
+.article .detils{
     padding: 1.5rem;
 }
-.blogs .hero .article-continer .article .detils .head{
+.article .detils .head{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.blogs .hero .article-continer .article .detils .head .article-name{
+.article .detils .head .article-name{
     font-size: 22px;
     font-weight: 600;
 }
-.blogs .hero .article-continer .article .detils .head .date{
+.article .detils .head .date{
     font-size: 10px;
     font-weight: 400;
 }
-.blogs .hero .article-continer .article .detils .descrabtion{
+.article .detils .descrabtion{
     font-size: 16px;
     font-weight: 400;
     padding-top: 1rem;
 }
-.blogs .hero .article-continer .article .detils .hashtack{
+.article .detils .hashtack{
     font-size: 10px;
     font-weight: 400;
     padding-top: 1rem;
 }
-.blogs .hero .article-continer .article .detils .footer{
+.detils .footer{
     display: flex;
     justify-content: space-between;
     padding-top: 1rem;
 }
-.blogs .hero .article-continer .article .detils .footer .icons :nth-child(2){
+.detils .footer .icons :nth-child(2){
     padding-left: 0.5rem;
 }
-.blogs .hero .article-continer .article .detils .footer .del-article{
+.detils .footer .del-article{
     cursor: pointer;
 }
-.arrowlink{
-    
-}
+
 .blogs .hero .Category-setting{
     width:20.5799812909261% ;
     display: flex;
@@ -207,6 +207,9 @@ body{
     padding-bottom: 0.5rem;
     outline: none;
     width: 100%;
+}
+.blogs .hero .Category-setting select , input{
+    cursor: pointer;
 }
 .blogs .hero .Category-setting .date {
     position: relative;

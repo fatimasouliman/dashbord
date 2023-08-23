@@ -1,0 +1,51 @@
+.detils{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-top: 10px;
+}
+.input{
+    width: 45%;
+    position: relative;
+    
+}
+.detils input{
+    width: 100%!important;
+    padding-left: 0!important;
+    border-bottom: 1px solid #8c8c8c!important;
+    padding-bottom: 5px;
+}
+input::-webkit-input-placeholder{
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    
+}
+select{
+    width: 100%;
+    padding-left: 0!important;
+    padding-right: 5px!important;
+    border-bottom: 1px solid #8c8c8c!important;
+    font-size: 20px;
+    font-weight: 400;
+
+}
+.input label{
+    position: absolute;
+    color: red;
+}
+.input .lable-name {
+    left: 130px
+}
+.input .label-number {
+    left: 165.5px
+}
+.input .label-type {
+    left: 120px
+}
+.input .lable-price{
+    left: 120px
+}
+.container{
+    display: flex!important;
+}

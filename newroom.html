@@ -6,6 +6,7 @@
     <title>dashbord</title>
     <link rel="stylesheet" href="./assets/css/index.css" >
     <link rel="stylesheet" href="./assets/css/new.css" >
+    <link rel="stylesheet" href="./assets/css/newroom.css" >
 </head>
 <body>
       <!------------------nav bar start------------------>
@@ -16,11 +17,11 @@
             <h1>Mountain Breeze Resort</h1>
         </div>
         <ul class="menu">
-            <li class="active"><a href="./index.html"><span></span><img src="./assets/images/blogs.png" >Blogs</a></li>
+            <li ><a href="./index.html"><span></span><img src="./assets/images/blogs.png" >Blogs</a></li>
             <li><a href="./gallery.html"><span></span><img src="./assets/images/gallery.png" >Gallery</a></li>
-            <li><a href="./rooms.html"><span></span><img src="./assets/images/rooms.png" >Rooms</a></li>
+            <li class="active"><a href="./rooms.html"><span></span><img src="./assets/images/rooms.png" >Rooms</a></li>
             <li><a href="./booking.html"><span></span><img src="./assets/images/booking.png" >Booking</a></li>
-            <li><a href="./explore.html"><span></span><img src="./assets/images/explore.png" >Explore</a></li>
+            <li><a href="./booking.html"><span></span><img src="./assets/images/explore.png" >Explore</a></li>
             <li><a href="./food.html"><span></span><img src="./assets/images/food.png" >Food</a></li>
             <li><a href="./inbox.html"><span></span><img src="./assets/images/inbox.png">Inbox</a></li>
             
@@ -33,7 +34,7 @@
     <section class="blogs">
         <header>
             <nav class="nav-blogs">
-                <h1>Blogs / New Article</h1>
+                <h1>Rooms / New Room</h1>
                 <ul class="admin-setting" >
                     <li><img src="./assets/images/notification.png" ></li>
                     <li><img src="./assets/images/profile-circle.png" ></li>
@@ -42,28 +43,34 @@
             </nav>
         </header>
         <div class="hero" >
-            
-            
-            <form>
-                <label class="cover">Article Cover <span>*</span></label>
-                <div class="image">
-                    <img class="added-img" src="" >
-                    <img  class="add" src="./assets/images/add-circle-big.png" >
-                    <input class="add-img" type="file"  accept="image/jpg, image/jpeg, image/png" id="input-img" required>
-                </div>
+            <form>            
                 <div class="detils" >
+                    <div class="input" >
+                        <label class="lable-name" for="input-name" >*</label>
+                        <input id="input-name" type="text" placeholder="Room Name" required>
+                    </div>
 
-                    <label class="title-lable" for="input-title" >*</label>
-                    <input id="input-title" type="text" placeholder="Title" required>
-                    <span class="left" >/</span>
-                    <span class="right" >/</span>
-                    <input id="input-date" type="date" value="date" formtarget="yyy/mm/dd">
-                    <label class="date" for="input-date">Date:</label>
+                    <div class="input">
+                        <label class="label-type" for="type">*</label>
+                        <select id="type" class="tags" required>
+                            <option>Room Type</option>
+                        </select>
+                    </div>
+
+                    <div class="input">
+                        <label class="label-number" for="number">*</label>
+                        <select id="number" class="tags" required>
+                            <option>guests Number</option>
+                        </select>
+                    </div>
+                    
+                    <div class="input">
+                        <label class="lable-price" for="input-price" >*</label>
+                        <input id="input-price" type="text" placeholder="Room Price" required>
+                    </div>
+
                 </div>
-                <label class="label-tags" for="tags">*</label>
-                <select id="tags" class="tags" required>
-                    <option>Tags</option>
-                </select>
+                
                 <div>
                     <label for="desc" >Description</label>
                     <textarea id="desc" class="description" >
@@ -72,10 +79,10 @@
                 </div>
                 <div class="add-photo-videos" >
                     <div class="cont-add" >
-                        <div class="first-add-btn">
+                        <!-- <div class="first-add-btn">
                             <img src="./assets/images/gallery-add.png" >
                             <span >Add photo/video</span>
-                        </div>
+                        </div> -->
                         <input id="input-photo" type="file" accept="image/jpg, image/jpeg, image/png , video/mp4" >
                     </div>
                     
@@ -108,7 +115,7 @@
                 </div>
                 <div class="btns">
                     <button class="cancel" >Cancel</button>
-                    <input class="add-a" type="submit" value="Add Article">
+                    <input class="add-a" type="submit" value="Add Room">
                 </div> 
             </form>
                
