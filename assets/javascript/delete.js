@@ -14,7 +14,26 @@ for (let i = 0; i < del.length; i++) {
     })
     
 }
+const bodyS = document.querySelector('body');
+let topSection ;
+
+window.addEventListener("scroll" , () => {
+    topSection = window.scrollY;
+    console.log(topSection);
+    move();
+})
+
 const cancelDel = document.querySelector(".div-popup-delet .popup-delet .delet-btns .cancel");
 cancelDel.addEventListener("click" , () => {
     divDelet.classList.remove("show");
 })
+
+function move() {
+    divDelet.style.top = `${topSection}px`;
+}
+
+
+
+
+
+

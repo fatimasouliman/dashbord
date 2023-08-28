@@ -1,3 +1,11 @@
+.gallery-seaction{
+    width: 78.2576867%;
+    max-height: 100%;
+}
+.gallery{
+    width: 91.95509822263798%;
+    max-height: 100%;
+}
 .hero{
     width: 100%;
     padding: 0px!important;
@@ -59,7 +67,6 @@
 }
 .head .menu .cont-add {
     position: relative;
-    padding-right: 9.2%;
 }
 .head .menu .cont-add .input{
     position: absolute;
@@ -80,7 +87,7 @@
     color: #004e6b;
 }
 .carousel{
-  width: 91.95509822263798%;
+  width: 100%;
   background-color: white;
   border-radius: 16.2px;
   box-shadow: 14.17625904083252px 10.125899314880371px 16.201438903808594px 0px #181D1F24;

@@ -1,8 +1,19 @@
+.food{
+    width: 78.2576867%;
+    max-height: 100%;
+}
+.carousel{
+    padding: 10px!important;
+}
+/* .wrapper{
+    height: 671px;
+} */
 .slider{
     flex-direction: row!important;
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
+    padding: 20px;
 }
 .slider .food-item{
     width: 45.06612410986775%;
@@ -27,4 +38,7 @@
     font-size: 16px;
     font-weight: 400;
     padding-top: 0.5rem;
+}
+.arrws{
+    margin: 2rem!important;
 }

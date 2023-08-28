@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>dashbord</title>
         <link rel="stylesheet" href="./assets/css/index.css" >
+        <link rel="stylesheet" href="./assets/css/navBar.css">
         <link rel="stylesheet" href="./assets/css/rooms.css" >
     </head>
     <body>
@@ -30,7 +31,7 @@
     <!------------------nav bar end------------------>
 
     <!------------------blogs section start------------------>
-        <section class="blogs">
+        <section class="rooms">
             <header>
                 <nav class="nav-blogs">
                     <h1>Rooms</h1>
@@ -51,11 +52,11 @@
                                         <div class="head">
                                             <div class="left-side" >
                                                 <h1 class="article-name" >Duplex Room</h1>
-                                                <span class="date" >2 floors suitable for families</span>
+                                                <span class="desc" >2 floors suitable for families</span>
                                             </div>
                                             <div class="icons">
-                                                <img src="./assets/images/edit.png" >
-                                                <img class="del-article" src="./assets/images/trash.png" >
+                                                <a class="edit" href="./editroom.html" ><img src="./assets/images/edit-gray-big.png"></a>
+                                                <img class="del-article" src="./assets/images/trash-gray.png" >
                                             </div>
                                         </div>
                                         <p class="descrabtion">Newly refurnished luxury accommodation with finest quality
@@ -92,11 +93,11 @@
                                         <div class="head">
                                             <div class="left-side" >
                                                 <h1 class="article-name" >Duplex Room</h1>
-                                                <span class="date" >2 floors suitable for families</span>
+                                                <span class="desc" >2 floors suitable for families</span>
                                             </div>
                                             <div class="icons">
-                                                <img src="./assets/images/edit.png" >
-                                                <img class="del-article" src="./assets/images/trash.png" >
+                                                <a class="edit" href="./editroom.html" ><img src="./assets/images/edit-gray-big.png"></a>
+                                                <img class="del-article" src="./assets/images/trash-gray.png" >
                                             </div>
                                         </div>
                                         <p class="descrabtion">Newly refurnished luxury accommodation with finest quality
@@ -142,7 +143,7 @@
                                 <select class="category" >
                                     <option value="Category">Room Price</option>
                                 </select>
-                                <span class="deleted-article" ><a href="./deletedrooms.html" >Deleted rooms</a></span>
+                                <span class="deleted-room" ><a href="./deletedrooms.html" >Deleted rooms</a></span>
                             </div>    
                     </div>
 
@@ -164,7 +165,6 @@
         </div>
     </div>    
     <script src="./assets/javascript/delete.js" ></script>
-    <script src="./assets/javascript/js.js"></script>
         
     </body>
 </html>

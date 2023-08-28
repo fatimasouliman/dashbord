@@ -1,9 +1,17 @@
+.rooms{
+    width: 78.2576867%;
+    max-height: 100%;
+}
 .article-continer{
     width: 69.50420954162769%!important;
 }
 .article{
     height: 339.45px!important;
     
+}
+.article .head .desc{
+    font-size: 13.26px;
+    font-weight: 400;
 }
 .article .detils{
     display: flex;
@@ -17,8 +25,13 @@
     border-bottom-left-radius: 10px;
 }
 .article .icons img{
+    width: 24px;
+    height: 24px;
     padding-right: 5px;
     cursor: pointer;
+}
+.edit{
+    text-decoration: none;
 }
 .article .descrabtion{
     font-size: 12.06px!important;
@@ -49,4 +62,9 @@
     font-weight: 400;
     left: 90px;
     bottom: 5px;
+}
+.deleted-room a{
+    border-bottom: 1px solid #E76A6A;
+    color: #E76A6A;
+    
 }

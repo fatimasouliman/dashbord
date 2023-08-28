@@ -1,3 +1,7 @@
+.new-food{
+    width: 78.2576867%;
+    max-height: 100%;
+}
 .detils{
     flex-wrap: wrap;
     gap: 1rem;

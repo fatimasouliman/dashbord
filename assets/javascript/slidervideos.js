@@ -116,13 +116,14 @@ const playIcon = document.querySelectorAll('.icon');
 const coverPhoto = document.querySelectorAll('.cover-photo');
 const videos = document.querySelectorAll('video');
 
+
 for (let i = 0; i < playIcon.length; i++) {
     playIcon[i].addEventListener( 'click' , () => {
         remove();
+        stop();
         playIcon[i].classList.add('display-icon');
-
         coverPhoto[i].classList.add('display-icon');
-        // videos[i].play();
+        videos[i].play();
     })
     
 }
@@ -134,8 +135,8 @@ function remove() {
         element.classList.remove('display-icon')
     })
 }
-// function stop() {
-//     videos.forEach(element => {
-//         !element.play();
-//     });
-// }
+function stop() {
+    videos.forEach(element => {
+        element.pause();
+    });
+}

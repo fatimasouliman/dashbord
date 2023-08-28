@@ -15,6 +15,10 @@
     display: flex;
     gap: 13px;
 }
+.hero .head .icons img{
+    width: 24px;
+    height: 24px;
+}
 .hero .article-detils .date{
     font-size: 16px;
     font-weight: 400;
@@ -50,7 +54,7 @@
 .hero .article-detils .container .container-add{
     display: flex;
    align-items: center;
-   padding-top: 1px;
+   padding-top: 5px;
    padding-right: 10px;
    gap: 15px;
    flex-direction: row-reverse;
