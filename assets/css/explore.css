@@ -19,6 +19,7 @@ a{
 }
 .wrapper{
     display: flex!important;
+    padding-bottom: 20px;
 }
 .slider{
     width: 95%!important;
@@ -29,4 +30,7 @@ a{
 }
 .head .menu .cont-add{
     padding-right:25px!important;
+}
+.arrws{
+    padding-right: 4rem;
 }
