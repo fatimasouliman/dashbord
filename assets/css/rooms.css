@@ -68,3 +68,31 @@
     color: #E76A6A;
     
 }
+/* Start Responsive */
+@media (max-width: 1100px) {
+    .rooms {
+        position: relative;
+        width: 100%;
+    }
+    .rooms .article .article-img-md {
+        width: 35.90578734858681% !important;
+    }
+    .hero .Category-setting .filter {
+        font-size: 18px;
+    }
+    .hero .Category-setting .category,
+    .deleted-room a {
+        font-size: 14px;
+    }
+    .article .services .service img {
+        padding-bottom: 1rem;
+    }
+    .detils .footer {
+        padding: 0;
+    }
+    /* .article .services .service p {
+        padding-top: 15px;
+    } */
+}
+
+/* End Responsive */

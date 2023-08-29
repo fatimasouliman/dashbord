@@ -239,3 +239,15 @@
 .display-icon{
     display: none!important;
 }
+
+/* Start Responsive */
+@media (max-width: 1100px) {
+    .gallery-seaction {
+        position: relative;
+        width: 100%;
+    }
+    .hero .filter .menu li {
+        font-size: 14px;
+    }
+}
+/* End Responsive */

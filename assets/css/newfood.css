@@ -87,3 +87,19 @@
 .btns :nth-child(2){
     width: 40%!important;
 }
+
+/* Start Responsive */
+@media (max-width: 1100px) {
+    .new-food {
+        width: 100%;
+        position: relative;
+    }
+    .category {
+        width: 38.0636109%;
+        font-size: 18px;
+    }
+    .hero form .detils input {
+        font-size: 18px;
+    }
+}
+/* End Responsive */

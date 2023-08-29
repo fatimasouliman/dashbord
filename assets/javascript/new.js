@@ -13,3 +13,22 @@ inputImg.onchange = function () {
 
 //-----give the input date the current date------
 inputDate.valueAsDate = new Date();
+
+const input = document.querySelector(".input-title");
+const label = document.querySelector(".title-lable");
+const tags = document.querySelector(".tags");
+const labelTags = document.querySelector(".label-tags");
+const addImg = document.querySelector(".add-img");
+const coverLabel = document.querySelector(".cover")
+
+input.addEventListener('click', () => {
+    label.style = 'display:none'
+})
+
+tags.addEventListener('click', () => {
+    labelTags.style = 'display:none'
+})
+
+addImg.addEventListener('click', () => {
+    coverLabel.style = 'display:none'
+})

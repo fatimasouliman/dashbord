@@ -42,3 +42,24 @@
 .arrws{
     margin: 2rem!important;
 }
+
+/* Start Responsive */
+@media (max-width: 1100px) {
+    .food {
+        width: 100%;
+        position: relative;
+    }
+    .slider .food-item {
+        height: 140px;
+    }
+    .slider .food-item h1 {
+        font-size: 18px;
+        padding-top: 0.5rem;
+    }
+    .slider .food-item p {
+        font-size: 13px;
+        padding-right: 0.5rem;
+    }
+}
+
+/* End Responsive */

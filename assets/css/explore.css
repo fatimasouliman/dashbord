@@ -34,3 +34,12 @@ a{
 .arrws{
     padding-right: 4rem;
 }
+
+/* Start Responsive */
+@media (max-width: 1100px) {
+    .explore {
+        width: 100%;
+        position: relative;
+    }
+}
+/* End Responsive */

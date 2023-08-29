@@ -24,7 +24,6 @@ a{
 }
 
 .hero{
-    /* background-color: #f0f0f0; */
     max-width: 100%;
     max-height: 100%;
     padding: 1rem;
@@ -129,6 +128,9 @@ a{
     font-weight: 400;
     padding-bottom: 0.5rem;
     outline: none;
+    width: 100%;
+}
+.hero .Category-setting .category option{
     width: 100%;
 }
 .hero .Category-setting select , input{
@@ -323,3 +325,35 @@ a{
 .displayart{
     display: none!important;
 }
+/* Start Responsive */
+@media (max-width: 1100px) {
+   
+    .blogs{
+        position: relative;
+        width: 100%;
+    }
+    /* .hero .article-continer {
+        width: 59.50420954162769%
+    }
+    .hero .Category-setting {
+        width: 31.216%;
+    } */
+    .article .detils .head .article-name {
+        font-size: 18px;
+    }
+    .article .detils .descrabtion {
+        font-size: 14px;
+    }
+    .detils .footer {
+        align-items: center;
+        padding: 0.5rem 0;
+    }
+    
+ .div-popup-delet .popup-delet .delet-btns .cancel,
+ .popup-delet .delet-btns .delet {
+    /* width: 145px!important ; */
+    font-size: 12px!important ;
+    white-space: nowrap!important ;
+}
+}
+/* End Responsive */
