@@ -44,9 +44,23 @@
     padding-top: 20px;
 }
 .article .services .service{
+    display: flex;
+    flex-direction: column;
     font-size: 9.65px;
     font-weight: 400;
     text-align: center;
+}
+.article .services .service .room-ser{
+    padding-top: 5px;
+}
+.article .services .service .bed{
+    padding-top: 8px;
+}
+.article .services .service .tv{
+    padding-top: 2px;
+}
+.article .services .service img{
+    padding-top: 5px;
 }
 .article .footer{
     position: relative;
@@ -84,9 +98,9 @@
     .deleted-room a {
         font-size: 14px;
     }
-    .article .services .service img {
+    /* .article .services .service img {
         padding-bottom: 1rem;
-    }
+    } */
     .detils .footer {
         padding: 0;
     }

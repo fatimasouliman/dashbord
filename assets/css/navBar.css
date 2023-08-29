@@ -87,7 +87,7 @@
     }
     .left-arrow{
         display: flex!important;
-        left: 87.2%!important;
+        left: 82%!important;
     }
 
     .nav-bar .logo img {
@@ -108,6 +108,13 @@
         padding-left: 4rem!important;
     }
    
+}
+
+@media (max-width: 700px) {
+    .left-arrow{
+    
+        left: 80%!important;
+    }
 }
 /* End Responsive Navbar */
 /* ---------------end nav bar style--------------- */
