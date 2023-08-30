@@ -21,14 +21,19 @@ input::-webkit-input-placeholder{
     font-weight: 400;
     
 }
-select{
+.Type , .guests{
     width: 100%;
     padding-left: 0!important;
     padding-right: 5px!important;
     border-bottom: 1px solid #8c8c8c!important;
     font-size: 20px;
     font-weight: 400;
-
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.Type:focus , .guests:focus{
+    outline: none;
 }
 .input label{
     position: absolute;
@@ -66,3 +71,26 @@ select{
     font-weight: 400;
 }
 
+.name:focus + .lable-name{
+    font-size: 12px;
+    bottom: 30px;
+    
+}
+.Type:focus + .label-type{
+    font-size: 12px;
+    bottom: 30px;
+    
+}
+.guests:focus + .label-number{
+    font-size: 12px;
+    bottom: 30px;
+    
+}
+.price:focus + .lable-price{
+    font-size: 12px;
+    bottom: 30px;
+   
+}
+.lable-price , .label-number , .label-type ,  .lable-name{
+    transition: 0.7s ease;
+}

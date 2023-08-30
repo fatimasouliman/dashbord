@@ -124,8 +124,9 @@ input::-webkit-file-upload-button{
     color: red;
 }
 
-input:focus + .title-lable{
-    visibility: hidden;
+#input-title:focus + .title-lable{
+    font-size: 12px;
+    bottom: 30px;
 }
 input::-webkit-input-placeholder{
     color: black;
@@ -186,9 +187,11 @@ input::-webkit-input-placeholder{
     background-color: transparent;
     font-size: 20px;
 }
-.hero form .tags option{
-    width: 100%;
+.tags:focus + .label-tags{
+    font-size: 12px;
+    bottom: 30px;
 }
+
 .hero form .label-tags{
     bottom: 3px;
     left: 52px

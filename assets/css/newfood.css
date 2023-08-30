@@ -14,6 +14,14 @@
     padding-bottom: 5px;
     font-size: 20px;
     font-weight: 400;
+    cursor: pointer;
+}
+.category:focus{
+    outline: none;
+}
+.category:focus + .label-category{
+    font-size: 12px;
+    bottom: 70px;
 }
 .label-category{
     color: red;
@@ -38,11 +46,17 @@
     font-weight: 400;
     bottom: 10px;
     left: 116px;
+    cursor: pointer;
+}
+.description-food:focus + .label-description{
+    font-size: 12px;
+    bottom: 30px;
 }
 .bottom-form{
     display: flex;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
 }
 .bottom-form .image-size{
     display: flex;
@@ -78,6 +92,9 @@
     color: #004E6B!important;
     width: 31px!important;
 }
+.bottom-form .btns{
+    margin-bottom: 1.5rem;
+}
 .btns{
     width: 234px;
 }
@@ -87,7 +104,10 @@
 .btns :nth-child(2){
     width: 40%!important;
 }
-
+#input-title:focus + .title-lable{
+    font-size: 12px!important;
+    bottom: 70px!important;
+}
 /* Start Responsive */
 @media (max-width: 1100px) {
     .new-food {
