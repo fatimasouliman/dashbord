@@ -48,6 +48,7 @@ a{
     display: flex;
     gap: 1rem;
 }
+
 .hero .article-continer {
     display:flex;
     flex-direction: column;
@@ -62,6 +63,7 @@ a{
     height: 215px;
     display: flex;
     box-shadow: 14.17625904083252px 10.125899314880371px 16.201438903808594px 0px #181D1F24;
+    height: fit-content;
 
 }
 .article .article-img{
@@ -469,4 +471,13 @@ a{
 }
 .flatpickr-day.nextMonthDay ,.flatpickr-day.prevMonthDay{
     color: #928C8C !important;
+}
+
+@media(max-width:1100px){
+    .article .article-img{
+        width: 38% ;
+    }
+   .article-continer{
+    width: 65%!important;
+   }
 }

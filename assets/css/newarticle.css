@@ -6,6 +6,7 @@ input[type="date"]::-webkit-calendar-picker-indicator{
     cursor: pointer;
 }
 form{
+    margin: 0 auto;
     width: 91.95509822263798%;
     display: flex;
     flex-direction: column;
@@ -97,10 +98,10 @@ input::-webkit-file-upload-button{
 }
 .hero form .detils .date{
     position: absolute;
+    left: 0px;
     font-size: 14px;
     color: #928C8C;
     font-weight: 400;
-    left: 0;
 }
 .hero form .detils input{
     border: none;
@@ -118,16 +119,17 @@ label span{
 .title-lable , .label-tags{
     font-size: 20px;
     left: 0;
+    bottom: 0;
     position: absolute;
     font-weight: 400;
     Line-height:24.38px;
     transition: 0.7s ease;
     cursor: pointer;
 }
-
-.tags:focus + .label-tags , #input-title:focus + .title-lable{
-    font-size: 12px;
+.label-tags.active-label ,.title-lable.active-label{
+    font-size: 11px;
     bottom: 30px;
+    left: -2px;
 }
 
 #input-title{
@@ -139,7 +141,7 @@ label span{
     font-weight: 400;
     width: 100%;
 }
-.hero form .detils input[type="date"]::-webkit-datetime-edit-year-field{
+/* .hero form .detils input[type="date"]::-webkit-datetime-edit-year-field{
     position: absolute !important;
     padding: 2px;
     color:#000;
@@ -163,17 +165,17 @@ label span{
 }
 .hero form .detils input[type="date"]::-webkit-datetime-edit{
     color: #f0f0f0;
-}
+} */
 .hero form .detils .left , .hero .detils .right{
     position: absolute;
     font-size: 16px;
     font-weight: 400;
 } 
 .hero form .detils .left{
-    left: 30%;
+    right: 20.8%;
 }
 .hero form .detils .right{
-    right: 58.5%;
+    right: 17.8%;
 }
 .container-tags{
     position: relative;
@@ -366,7 +368,7 @@ label span{
         font-size: 18px;
     }
     #input-date {
-        width: 50.51881993896236%;
+        /* width: 50.51881993896236%; */
         font-size: 14px;
     }
     .hero form .tags,

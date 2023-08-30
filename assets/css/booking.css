@@ -11,7 +11,7 @@
     flex-direction: column!important;
     padding: 2rem;
     gap: 1rem;
-    height: 227px!important;
+    height: fit-content!important;
 }
 .article .head{
     display: flex;

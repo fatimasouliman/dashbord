@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     gap: 30px;
     padding-top: 10px;
+    user-select: none;
 }
 .input{
     width: 45%;
@@ -70,12 +71,14 @@ label span{
     transition: 0.7s ease;
     color: black;
     cursor: pointer;
+    bottom: 5px;
 }
 
-.name:focus + .lable-name,
-.Type:focus + .label-type  ,  
-.guests:focus + .label-number,
-.price:focus + .lable-price{
+.lable-name.active-label,
+.label-type.active-label  ,  
+.label-number.active-label,
+.lable-price.active-label{
     font-size: 12px;
     bottom: 30px;
+    left: -2px;
 }

@@ -43,6 +43,7 @@
     font-size: 20px;
     font-weight: 400;
     padding-bottom: 5px;
+    padding-top: 20px;
 }
 label span{
     color: red;
@@ -56,11 +57,23 @@ label span{
     transition: 0.7s ease;
     color: black;
     cursor: pointer;
+    bottom: 2px;
 }
-
-.description-food:focus + .label-description , .category:focus + .label-category{
+.title-food {
+    position: relative;
+    width: 619px;
+    padding-top: 6px;
+}
+.title-lable {
+    bottom: 2px;
+}
+.title-in-food {
+    width: 619px !important;
+}
+.label-description.active-label ,.label-category.active-label ,.title-lable.active-label {
     font-size: 12px;
     bottom: 30px;
+    left: -2px;
 }
 .bottom-form{
     display: flex;
@@ -125,7 +138,7 @@ label span{
         position: relative;
     }
     .category {
-        width: 38.0636109%;
+        width: 100%;
         font-size: 18px;
     }
     .hero form .detils input {
