@@ -19,7 +19,7 @@
                 <img src="./assets/images/logo.png" >
                 <h1>Mountain Breeze Resort</h1>
             </div>
-            
+
         </div>
         <ul class="menu">
             <li ><a href="./index.html"><span></span><img src="./assets/images/blogs.png" >Blogs</a></li>
@@ -39,7 +39,6 @@
     <section class="blogs">
         <header>
             <img class="right-arrow" src="./assets/images/white-arrow.png">
-            
             <nav class="nav-blogs">
                 <h1>Rooms / Edit Room</h1>
                 <ul class="admin-setting" >
@@ -54,37 +53,37 @@
                 <div class="detils" >
                     <div class="input" >
                         
-                        <input class="name" id="input-name" type="text" placeholder="Room Name" required>
-                        <label class="lable-name" for="input-name" >*</label>
+                        <input class="name" id="input-name" type="text" required>
+                        <label class="lable-name" for="input-name" >Room Name<span>*</span></label>
                     </div>
 
                     <div class="input">
                         
                         <select id="type" class="Type" required>
-                            <option>Room Type</option>
+                            <option></option>
                         </select>
-                        <label class="label-type" for="type">*</label>
+                        <label class="label-type" for="type">Room Type<span>*</span></label>
                     </div>
 
                     <div class="input">
                         
                         <select id="number" class="guests" required>
-                            <option>guests Number</option>
+                            <option></option>
                         </select>
-                        <label class="label-number" for="number">*</label>
+                        <label class="label-number" for="number">guests Number<span>*</span></label>
                     </div>
                     
                     <div class="input">
                         
-                        <input class="price" id="input-price" type="text" placeholder="Room Price" required>
-                        <label class="lable-price" for="input-price" >*</label>
+                        <input class="price" id="input-price" type="text" required>
+                        <label class="lable-price" for="input-price" >Room Price<span>*</span></label>
 
                     </div>
 
                 </div>
                 
                 <div>
-                    <label for="desc" >Description</label>
+                    <label for="desc" class="description-label" >Description</label>
                     <textarea id="desc" class="description" >
 
                 </textarea>
@@ -95,7 +94,7 @@
                         <span>Photos</span>
                         <div style="display: flex; flex-direction: row-reverse;" >
                             <div class="add-btn" >
-                                <input id="input-photo" type="file" accept="image/jpg, image/jpeg, image/png , video/mp4" >
+                                <input class="new-add" id="input-photo" type="file" accept="image/jpg, image/jpeg, image/png , video/mp4" >
                                 <img src="./assets/images/add-circle-photo.png">
                             </div>
                             <div class="container-add" >
@@ -128,8 +127,7 @@
         </div>
     </section>
     <!------------------blogs section end------------------>
-
     <script src="./assets/javascript/navbar.js" ></script>
-    <script src="./assets/javascript/new.js" ></script>
+    <script src="./assets/javascript/addGroubPhotoVideo.js"></script>
 </body>
 </html>

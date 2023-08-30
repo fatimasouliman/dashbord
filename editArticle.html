@@ -50,8 +50,6 @@
             </nav>
         </header>
         <div class="hero">
-
-
             <form>
                 
                 <div class="container-image">
@@ -70,9 +68,8 @@
 
                 <div class="detils">
                     
-                    <input class="input-title" id="input-title" type="text" placeholder="Title" required>
-                    <label class="title-lable" for="input-title">*</label>
-
+                    <input class="input-title" id="input-title" type="text" required>
+                    <label class="title-lable" for="input-title">Title<span>*</span></label>
                     <span class="left">/</span>
                     <span class="right">/</span>
                     <input id="input-date" type="date" value="date" formtarget="yyy/mm/dd">
@@ -81,13 +78,13 @@
                 <div class="container-tags">
                     
                     <select id="tags" class="tags" required>
-                        <option>Tags</option>
+                        <option></option>
                     </select>
-                    <label class="label-tags" for="tags">*</label>
+                    <label class="label-tags" for="tags">Tags<span>*</span></label>
                 </div>
 
                 <div>
-                    <label for="desc">Description</label>
+                    <label class="desc" for="desc">Description</label>
                     <textarea id="desc" class="description">
 
                 </textarea>
@@ -141,6 +138,7 @@
     <script src="./assets/javascript/navbar.js" ></script>
     <script src="./assets/javascript/new.js"></script>
     <script src="./assets/javascript/addGroubPhotoVideo.js"></script>
+
 </body>
 
 </html>
