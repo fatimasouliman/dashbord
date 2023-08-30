@@ -35,22 +35,7 @@ input::-webkit-input-placeholder{
 .Type:focus , .guests:focus{
     outline: none;
 }
-.input label{
-    position: absolute;
-    color: red;
-}
-.input .lable-name {
-    left: 130px
-}
-.input .label-number {
-    left: 165.5px
-}
-.input .label-type {
-    left: 120px
-}
-.input .lable-price{
-    left: 120px
-}
+
 .add-btn{
     position: relative;
 }
@@ -71,26 +56,26 @@ input::-webkit-input-placeholder{
     font-weight: 400;
 }
 
-.name:focus + .lable-name{
-    font-size: 12px;
-    bottom: 30px;
-    
+
+
+label span{
+    color: red;
 }
-.Type:focus + .label-type{
-    font-size: 12px;
-    bottom: 30px;
-    
+.lable-price , .label-number , .label-type ,  .lable-name{
+    font-size: 20px;
+    left: 0;
+    position: absolute;
+    font-weight: 400;
+    Line-height:24.38px;
+    transition: 0.7s ease;
+    color: black;
+    cursor: pointer;
 }
-.guests:focus + .label-number{
-    font-size: 12px;
-    bottom: 30px;
-    
-}
+
+.name:focus + .lable-name,
+.Type:focus + .label-type  ,  
+.guests:focus + .label-number,
 .price:focus + .lable-price{
     font-size: 12px;
     bottom: 30px;
-   
-}
-.lable-price , .label-number , .label-type ,  .lable-name{
-    transition: 0.7s ease;
 }

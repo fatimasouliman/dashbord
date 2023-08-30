@@ -9,10 +9,10 @@ const firstAddBtn = document.querySelector(".first-add-btn");
 const editBtn = document.querySelector(".edit");
 
 addPhoto.addEventListener("change", () => {
-    console.log("change");
-    addPhoto.classList.contains("new-add")?  null : addPhoto.classList.add("new-add");
-    container.classList.add("show");
-    firstAddBtn? firstAddBtn.classList.add("hidden") : null;
+   console.log("change");
+   addPhoto.classList.contains("new-add")?  null : addPhoto.classList.add("new-add");
+   container.classList.add("show");
+   firstAddBtn? firstAddBtn.classList.add("hidden") : null;
    
 
    let type = addPhoto.files[0].type;
@@ -25,17 +25,18 @@ addPhoto.addEventListener("change", () => {
    imgTrash.classList.add('delet');
    trash.appendChild(imgTrash);
 
-   if (type === "image/jpg" || "image/jpeg" || "image/png") {
+   if (type.startsWith("image/")) {
 
       const element = document.createElement('img');
       element.classList.add("photo")
       element.src = `${URL.createObjectURL(addPhoto.files[0])}`;
       addedPhoto.appendChild(element);
 
-   } else {
+   } else if (type.startsWith("video/")) {
 
       const element = document.createElement('video');
       element.classList.add("photo");
+      element.setAttribute("controls", "true");
       const elementSrc = document.createElement('source');
       elementSrc.src = `${URL.createObjectURL(addPhoto.files[0])}`;
       element.appendChild(elementSrc);

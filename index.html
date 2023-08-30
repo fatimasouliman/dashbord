@@ -4,6 +4,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>dashbord</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
         <link rel="stylesheet" href="./assets/css/index.css" >
         <link rel="stylesheet" href="./assets/css/navBar.css">
     </head>
@@ -121,42 +125,25 @@
                                 <select class="category" >
                                     <option value="Category">Category</option>
                                 </select>
-                                <div class="date">
-                                    <img class="calendar-img" src="./assets/images/calendar.png" >
-                                    <input id="input-date" type="date" >
-                                    <img class="close" src="./assets/images/close-circle.png" >
-                                </div>
-                                <div class="calendar">
-                                    <div class="calender-header">
-                                        <div class="picker" id="picker">
-                                            <span class="change" >
-                                                <pre> <img id="prev" src="./assets/images/Prev.png" > </pre>
-                                            </span>
-                                            <div >
-                                                <span class="current-date" id="mounth-picker" >
-                                                    
-                                                </span>
-                                            </div>
-                                            
-                                            <span class="change"  >
-                                                <pre> <img id="next" src="./assets/images/Next.png" > </pre>
-                                            </span>
-                                        </div>
-                                    </div>                                    
-                                    <div class="calender-body">
-                                        <ul class="calender-week-day">
-                                            <li>Su</li>
-                                            <li>Mo</li>
-                                            <li>Tu</li>
-                                            <li>We</li>
-                                            <li>Th</li>
-                                            <li>Fr</li>
-                                            <li>Sa</li>
-                                        </ul>
-                                        <ul class="calender-days">
-                                                                                        
-                                        </ul>
-                                    </div>
+                                <div class="date-container">
+                                    <svg class="calender-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                        <path d="M5.5332 1.81445V3.81445" stroke="black" stroke-opacity="0.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M10.8652 1.81445V3.81445" stroke="black" stroke-opacity="0.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M2.5332 6.54102H13.8665" stroke="black" stroke-opacity="0.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M14.1992 6.14779V11.8145C14.1992 13.8145 13.1992 15.1478 10.8659 15.1478H5.53255C3.19922 15.1478 2.19922 13.8145 2.19922 11.8145V6.14779C2.19922 4.14779 3.19922 2.81445 5.53255 2.81445H10.8659C13.1992 2.81445 14.1992 4.14779 14.1992 6.14779Z" stroke="black" stroke-opacity="0.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M10.6617 9.61263H10.6677" stroke="black" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M10.6617 11.6126H10.6677" stroke="black" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8.19491 9.61263H8.20089" stroke="black" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8.19491 11.6126H8.20089" stroke="black" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M5.73006 9.61263H5.73605" stroke="black" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M5.73006 11.6126H5.73605" stroke="black" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <input type="text" id="myDatePicker">
+                                    <svg class="empty-input-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                        <path d="M7.80013 13.3132C11.0085 13.3132 13.6335 10.6882 13.6335 7.47982C13.6335 4.27148 11.0085 1.64648 7.80013 1.64648C4.5918 1.64648 1.9668 4.27148 1.9668 7.47982C1.9668 10.6882 4.5918 13.3132 7.80013 13.3132Z" stroke="black" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6.15039 9.13174L9.45206 5.83008" stroke="black" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M9.45206 9.13174L6.15039 5.83008" stroke="black" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
                                 </div>
                                 <span class="deleted-article" ><a href="./deletedarticle.html" >Deleted articles</a></span>
                             </div>    
@@ -181,7 +168,7 @@
         </div>
     </div>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="./assets/javascript/navbar.js"></script>
     <script src="./assets/javascript/delete.js" ></script>    
     <script src="./assets/javascript/js.js"></script>

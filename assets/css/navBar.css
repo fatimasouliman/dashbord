@@ -87,7 +87,7 @@
     }
     .left-arrow{
         display: flex!important;
-        left: 82%!important;
+        left: 85.8%!important;
     }
 
     .nav-bar .logo img {
@@ -112,7 +112,11 @@
 
 @media (max-width: 700px) {
     .left-arrow{
-    
+        left: 80%!important;
+    }
+}
+@media (max-width: 968px) {
+    .left-arrow{
         left: 80%!important;
     }
 }

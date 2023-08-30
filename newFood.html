@@ -60,16 +60,20 @@
                 </div>
                 <div class="detils" >
 
-                    <input id="input-title" type="text" placeholder="Title" required>
-                    <label class="title-lable" for="input-title" >*</label>
+                    <input id="input-title" type="text" required>
+                    <label class="title-lable" for="input-title" >Title<span>*</span></label>
+                    <div class="category-container" >
+                        <select id="category" class="category" required>
+                            <option></option>
+                        </select>
+                        <label class="label-category" for="category">Category<span>*</span></label>
+                    </div>
                     
-                    <select id="category" class="category" required>
-                        <option>Category</option>
-                    </select>
-                    <label class="label-category" for="category">*</label>
+                    <div class="description-container">
+                        <input class="description-food" id="description-food" type="text" >
+                    <label class="label-description" for="description-food">Description<span>*</span></label>
+                    </div>
                     
-                    <input class="description-food" id="description-food" type="text" placeholder="Description">
-                    <label class="label-description" for="description-food">*</label>
                 </div>
               <div class="bottom-form">
                 <div class="image-size" >

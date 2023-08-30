@@ -110,27 +110,26 @@ input::-webkit-file-upload-button{
     font-size: 20px;
     font-weight: 400;
 }
-.hero form .detils .title-lable , .label-tags{
-    position: absolute;
-    font-size: 20px;
-    font-weight: 400;
-    Line-height:24.38px;
-}
-.hero form .detils .title-lable{
-    left: 45px;
-}
 
-.hero form .detils .title-lable, .label-tags{
+
+label span{
     color: red;
 }
+.title-lable , .label-tags{
+    font-size: 20px;
+    left: 0;
+    position: absolute;
+    font-weight: 400;
+    Line-height:24.38px;
+    transition: 0.7s ease;
+    cursor: pointer;
+}
 
-#input-title:focus + .title-lable{
+.tags:focus + .label-tags , #input-title:focus + .title-lable{
     font-size: 12px;
     bottom: 30px;
 }
-input::-webkit-input-placeholder{
-    color: black;
-} 
+
 #input-title{
     width: 62.970498474059%;
 }
@@ -187,15 +186,8 @@ input::-webkit-input-placeholder{
     background-color: transparent;
     font-size: 20px;
 }
-.tags:focus + .label-tags{
-    font-size: 12px;
-    bottom: 30px;
-}
 
-.hero form .label-tags{
-    bottom: 3px;
-    left: 52px
-}
+
 .hero form .tags:focus {
     outline: none;
 }
