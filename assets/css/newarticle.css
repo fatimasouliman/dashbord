@@ -363,6 +363,9 @@ label span{
 
 /* Start Responsive */
 @media (max-width: 1100px) {
+    .container-date{
+        width: 50.51881993896236%!important;
+    }
     #input-title {
         width: 42.970498474059%;
         font-size: 18px;
