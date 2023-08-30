@@ -97,10 +97,10 @@ input::-webkit-file-upload-button{
 }
 .hero form .detils .date{
     position: absolute;
-    right: 245px;
     font-size: 14px;
     color: #928C8C;
     font-weight: 400;
+    left: 0;
 }
 .hero form .detils input{
     border: none;
@@ -137,7 +137,7 @@ label span{
     padding-left: 2.8rem;
     font-size: 16px;
     font-weight: 400;
-    width: 30.51881993896236%;
+    width: 100%;
 }
 .hero form .detils input[type="date"]::-webkit-datetime-edit-year-field{
     position: absolute !important;
@@ -170,10 +170,10 @@ label span{
     font-weight: 400;
 } 
 .hero form .detils .left{
-    right: 20.8%;
+    left: 30%;
 }
 .hero form .detils .right{
-    right: 17.8%;
+    right: 58.5%;
 }
 .container-tags{
     position: relative;
