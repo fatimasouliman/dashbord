@@ -5,8 +5,7 @@ input:focus{
 input[type="date"]::-webkit-calendar-picker-indicator{
     cursor: pointer;
 }
-form{
-    margin: 0 auto;
+form{  
     width: 91.95509822263798%;
     display: flex;
     flex-direction: column;
@@ -119,7 +118,7 @@ label span{
 .title-lable , .label-tags{
     font-size: 20px;
     left: 0;
-    bottom: 0;
+    bottom: 3px;
     position: absolute;
     font-weight: 400;
     Line-height:24.38px;
@@ -289,7 +288,7 @@ label span{
     
 }
 .hero .add-photo-videos .add-btn{
-    width: 100px;
+    min-width: 100px;
     height: 100px;
     border-radius: 10px;
     display: flex;
@@ -363,23 +362,32 @@ label span{
 
 /* Start Responsive */
 @media (max-width: 1100px) {
+
+    form{
+        margin: 0 auto;
+    }
+
     .container-date{
         width: 50.51881993896236%!important;
     }
+
     #input-title {
         width: 42.970498474059%;
         font-size: 18px;
     }
+
     #input-date {
-        /* width: 50.51881993896236%; */
         font-size: 14px;
     }
+
     .hero form .tags,
     .hero form .desc {
         font-size: 18px;
     }
+
     .hero form .btns .add-a { 
         width: 13.7577174929841%;
     }
+
 }
 /* End Responsive */

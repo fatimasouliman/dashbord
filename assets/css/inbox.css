@@ -268,10 +268,16 @@
     font-weight: 500;
     line-height: 12.19px;
     color: #282828;
+    padding-left: -10px;
+    border: none;
+    width: 100%;
   }
-  .inbox .response-box .response-desc span {
+  .inbox .response-box .response-desc:focus{
+    outline: none;
+  }
+  /* .inbox .response-box .response-desc span {
     color: #004E6B;
-  }
+  } */
   .inbox .first-response-box  img {
     width: 2.5px;
     height: 10px;
