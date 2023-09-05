@@ -8,47 +8,50 @@
     <link rel="stylesheet" href="./assets/css/index.css">
     <link rel="stylesheet" href="./assets/css/navBar.css">
     <link rel="stylesheet" href="./assets/css/newarticle.css">
+    <script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
 </head>
 
 <body>
     <!------------------nav bar start------------------>
 
     <nav class="nav-bar">
-        <img class="left-arrow" src="./assets/images/arrowleft2.png">
-        <div class="logo-container">
-            <div class="logo">
-                <img src="./assets/images/logo.png" >
-                <h1>Mountain Breeze Resort</h1>
-            </div>
-            
-        </div>
-        <ul class="menu">
-            <li class="active"><a href="./index.html"><span></span><img src="./assets/images/blogs.png">Blogs</a></li>
-            <li><a href="./gallery.html"><span></span><img src="./assets/images/gallery.png">Gallery</a></li>
-            <li><a href="./rooms.html"><span></span><img src="./assets/images/rooms.png">Rooms</a></li>
-            <li><a href="./booking.html"><span></span><img src="./assets/images/booking.png">Booking</a></li>
-            <li><a href="./explore.html"><span></span><img src="./assets/images/explore.png">Explore</a></li>
-            <li><a href="./food.html"><span></span><img src="./assets/images/food.png">Food</a></li>
-            <li><a href="./inbox.html"><span></span><img src="./assets/images/inbox.png">Inbox</a></li>
+        <img class="left-arrow" src="./assets/images/arrow-left.svg">
 
+        <div class="logo">
+            <img src="./assets/images/logo.svg" >
+            <h1>Mountain Breeze Resort</h1>
+        </div>
+
+
+        <ul class="menu">
+            <li class="active"><a href="./index.html"><span></span><img src="./assets/images/blog.svg">Blogs</a></li>
+            <li><a href="./gallery.html"><span></span><img src="./assets/images/gallrey.svg" >Gallery</a></li>
+            <li><a href="./rooms.html"><span></span><img src="./assets/images/rooms.svg" >Rooms</a></li>
+            <li><a href="./booking.html"><span></span><img src="./assets/images/booking.svg" >Booking</a></li>
+            <li><a href="./explore.html"><span></span><img src="./assets/images/explore.svg" >Explore</a></li>
+            <li><a href="./food.html"><span></span><img src="./assets/images/food.svg" >Food</a></li>
+            <li><a href="./inbox.html"><span></span><img src="./assets/images/inbox.svg">Inbox</a></li>
+            
         </ul>
+
     </nav>
 
     <!------------------nav bar end------------------>
 
     <!------------------blogs section start------------------>
-    <section class="blogs">
-        <header>
-            <img class="right-arrow" src="./assets/images/white-arrow.png">
-            <nav class="nav-blogs">
-                <h1>Blogs / New Article</h1>
-                <ul class="admin-setting">
-                    <li><img src="./assets/images/notification.png"></li>
-                    <li><img src="./assets/images/profile-circle.png"></li>
-                    <li>Admin name</li>
-                </ul>
-            </nav>
-        </header>
+        <section class="blogs">
+            
+            <header>
+                <img class="right-arrow" src="./assets/images/arrow-right-white.svg">
+                <nav class="nav-blogs">
+                    <h1>Blogs / New Article</h1>
+                    <ul class="admin-setting" >
+                        <li><img src="./assets/images/notification.svg" ></li>
+                        <li><img src="./assets/images/profile-circle.svg" ></li>
+                        <li>Admin name</li>
+                    </ul>
+                </nav>
+            </header>
         <div class="hero">
             <form>
                 
@@ -56,12 +59,12 @@
                     <label class="cover">Article Cover <span>*</span></label>
                     <div class="image">
                         <img class="added-img" src="">
-                        <img class="add" src="./assets/images/add-circle-big.png">
+                        <img class="add" src="./assets/images/add-circle.svg">
                         <input class="add-img" type="file" accept="image/jpg, image/jpeg, image/png" id="input-img"
                             required>
                     </div>
                     <div class="edit">
-                        <img src="./assets/images/edit-gray.png">
+                        <img src="./assets/images/edit-gray.svg">
                         <span class="edit-text">Edit Cover Image</span>
                     </div>
                 </div>
@@ -87,14 +90,12 @@
 
                 <div>
                     <label class="desc" for="desc">Description</label>
-                    <textarea id="desc" class="description">
-
-                </textarea>
+                    <textarea id="desc" class="description" rows="5"></textarea>
                 </div>
                 <div class="add-photo-videos">
                     <div class="cont-add">
                         <div class="first-add-btn">
-                            <img src="./assets/images/gallery-add.png">
+                            <img src="./assets/images/gallery-add.svg">
                             <span>Add photo/video</span>
                         </div>
                         <input id="input-photo" type="file" accept="image/jpg, image/jpeg, image/png , video/mp4">
@@ -104,7 +105,7 @@
                         <span>Photos</span>
                         <div style="display: flex; flex-direction: row-reverse;">
                             <div class="add-btn">
-                                <img src="./assets/images/add-circle-photo.png">
+                                <img src="./assets/images/add-circle2.svg">
                             </div>
                             <div class="container-add">
                                 <!-- <div class="added-photo" >
@@ -140,6 +141,16 @@
     <script src="./assets/javascript/navbar.js" ></script>
     <script src="./assets/javascript/new.js"></script>
     <script src="./assets/javascript/addGroubPhotoVideo.js"></script>
+    <script>
+        ClassicEditor
+                .create( document.querySelector( '#desc' ) )
+                .then( desc => {
+                        console.log( desc );
+                } )
+                .catch( error => {
+                        console.error( error );
+                } );
+    </script>
 
 </body>
 

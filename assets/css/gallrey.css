@@ -3,7 +3,7 @@
     max-height: 100%;
 }
 .gallery{
-    margin: 0 auto;
+    
     width: 91.95509822263798%;
     max-height: 100%;
 }
@@ -246,6 +246,9 @@
     .gallery-seaction {
         position: relative;
         width: 100%;
+    }
+    .gallery{
+        margin: 0 auto;
     }
     .hero .filter .menu li {
         font-size: 14px;

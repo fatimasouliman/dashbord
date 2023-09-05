@@ -16,6 +16,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0 1.5rem;
+    align-items: center;
 }
 .inbox .hero-inbox .icon-line {
     padding: 2rem 0 0.2rem;
@@ -219,6 +220,7 @@
     width: 14px;
     height: 14px;
     cursor: pointer;
+    border-radius: 10px;
 }
 .inbox .download-inbox {
     display: flex;
@@ -262,15 +264,28 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
 }
 .inbox .response-box .response-desc {
+  
+    border: none;
+    width: 100%;
+    padding: 10px;
+}
+  .inbox .response-box .response-desc-label{
+    position: absolute;
     font-size: 10px;
     font-weight: 500;
     line-height: 12.19px;
-    color: #282828;
-    padding-left: -10px;
-    border: none;
-    width: 100%;
+    color: #282828B2;
+    left: 1.5rem;
+    top: 2rem;
+  }
+  .inbox .response-box .response-desc:focus + .response-desc-label{
+    display: none;
+  }
+  .active-desc{
+    display: none;
   }
   .inbox .response-box .response-desc:focus{
     outline: none;

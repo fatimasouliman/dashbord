@@ -24,10 +24,14 @@
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
-.article .icons img{
+.article .icons{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.article .icons img , .article .icons a {
     width: 24px;
     height: 24px;
-    padding-right: 5px;
     cursor: pointer;
 }
 .edit{

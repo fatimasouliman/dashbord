@@ -101,9 +101,29 @@ a{
     justify-content: space-between;
     padding-top: 1rem;
 }
-.detils .footer .icons :nth-child(2){
-    padding-left: 0.5rem;
+.detils .footer .icons {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
 }
+.detils .footer .icons a{
+    width: 24px;
+    height: 24px;
+}
+.detils .footer .icons img , .detils .footer .icons a img{
+    width: 24px;
+    height: 24px;
+}
+.arrowlink{
+    width: 30px;
+    height: 30px;
+    background-color: #004E6B;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .detils .footer .del-article{
     cursor: pointer;
 }

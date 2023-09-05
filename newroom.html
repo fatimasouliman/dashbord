@@ -8,28 +8,30 @@
     <link rel="stylesheet" href="./assets/css/navBar.css">
     <link rel="stylesheet" href="./assets/css/newarticle.css" >
     <link rel="stylesheet" href="./assets/css/newroom.css" >
+    <script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
 </head>
 <body>
       <!------------------nav bar start------------------>
 
       <nav class="nav-bar">
-        <img class="left-arrow" src="./assets/images/arrowleft2.png">
-        <div class="logo-container">
-            <div class="logo">
-                <img src="./assets/images/logo.png" >
-                <h1>Mountain Breeze Resort</h1>
-            </div>
+        <img class="left-arrow" src="./assets/images/arrow-left.svg">
 
+        <div class="logo">
+            <img src="./assets/images/logo.svg" >
+            <h1>Mountain Breeze Resort</h1>
         </div>
+
+
         <ul class="menu">
-            <li ><a href="./index.html"><span></span><img src="./assets/images/blogs.png" >Blogs</a></li>
-            <li><a href="./gallery.html"><span></span><img src="./assets/images/gallery.png" >Gallery</a></li>
-            <li class="active"><a href="./rooms.html"><span></span><img src="./assets/images/rooms.png" >Rooms</a></li>
-            <li><a href="./booking.html"><span></span><img src="./assets/images/booking.png" >Booking</a></li>
-            <li><a href="./booking.html"><span></span><img src="./assets/images/explore.png" >Explore</a></li>
-            <li><a href="./food.html"><span></span><img src="./assets/images/food.png" >Food</a></li>
-            <li><a href="./inbox.html"><span></span><img src="./assets/images/inbox.png">Inbox</a></li>
+            <li ><a href="./index.html"><span></span><img src="./assets/images/blog.svg">Blogs</a></li>
+            <li><a href="./gallery.html"><span></span><img src="./assets/images/gallrey.svg" >Gallery</a></li>
+            <li class="active" ><a href="./rooms.html"><span></span><img src="./assets/images/rooms.svg" >Rooms</a></li>
+            <li><a href="./booking.html"><span></span><img src="./assets/images/booking.svg" >Booking</a></li>
+            <li><a href="./explore.html"><span></span><img src="./assets/images/explore.svg" >Explore</a></li>
+            <li><a href="./food.html"><span></span><img src="./assets/images/food.svg" >Food</a></li>
+            <li><a href="./inbox.html"><span></span><img src="./assets/images/inbox.svg">Inbox</a></li>
             
+        </ul>
         </ul>
     </nav>
 
@@ -38,16 +40,17 @@
 <!------------------blogs section start------------------>
     <section class="blogs">
         <header>
-            <img class="right-arrow" src="./assets/images/white-arrow.png">
+            <img class="right-arrow" src="./assets/images/arrow-right-white.svg">
             <nav class="nav-blogs">
                 <h1>Rooms / New Room</h1>
                 <ul class="admin-setting" >
-                    <li><img src="./assets/images/notification.png" ></li>
-                    <li><img src="./assets/images/profile-circle.png" ></li>
+                    <li><img src="./assets/images/notification.svg" ></li>
+                    <li><img src="./assets/images/profile-circle.svg" ></li>
                     <li>Admin name</li>
                 </ul>
             </nav>
         </header>
+         
         <div class="hero" >
             <form>            
                 <div class="detils" >
@@ -95,7 +98,7 @@
                         <div style="display: flex; flex-direction: row-reverse;" >
                             <div class="add-btn" >
                                 <input class="new-add" id="input-photo" type="file" accept="image/jpg, image/jpeg, image/png , video/mp4" >
-                                <img src="./assets/images/add-circle-photo.png">
+                                <img src="./assets/images/add-circle2.svg">
                             </div>
                             <div class="container-add" >
                                 <!-- <div class="added-photo" >
@@ -129,5 +132,16 @@
     <!------------------blogs section end------------------>
     <script src="./assets/javascript/navbar.js" ></script>
     <script src="./assets/javascript/addGroubPhotoVideo.js"></script>
+    <script>
+        ClassicEditor
+                .create( document.querySelector( '#desc' ) )
+                .then( desc => {
+                        console.log( desc );
+                } )
+                .catch( error => {
+                        console.error( error );
+                } );
+    </script> 
+    
 </body>
 </html>

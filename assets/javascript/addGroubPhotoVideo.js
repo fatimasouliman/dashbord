@@ -21,7 +21,7 @@ addPhoto.addEventListener("change", () => {
    const trash = document.createElement('div');
    trash.classList.add("trash");
    const imgTrash = document.createElement('img');
-   imgTrash.src = "./assets/images/bag.png";
+   imgTrash.src = "./assets/images/bag.svg";
    imgTrash.classList.add('delet');
    trash.appendChild(imgTrash);
 

@@ -48,7 +48,20 @@
 label span{
     color: red;
 }
-.label-category , .label-description{
+.label-description{
+    font-size: 20px;
+    /* left: 0;
+    position: absolute; */
+    font-weight: 400;
+    Line-height:24.38px;
+    transition: 0.7s ease;
+    color: black;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 5px;
+    /* bottom: 2px; */
+}
+.label-category {
     font-size: 20px;
     left: 0;
     position: absolute;
